@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.addetect.addetect" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".AdDetect"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Scanning"
+            android:label="Scanning"
+            android:parentActivityName=".AdDetect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.addetect.addetect.AdDetect" />
+        </activity>
+        <activity
+            android:name=".DetectingAds"
+            android:label="@string/title_activity_detecting_ads"
+            android:parentActivityName=".AdDetect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.addetect.addetect.AdDetect" />
+        </activity>
+        <activity
+            android:name=".view_process"
+            android:label="@string/title_activity_view_process"
+            android:parentActivityName=".AdDetect"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.addetect.addetect.Scanning" />
+        </activity>
+        <activity android:name=".kjcreations1"
+            android:label="scrapping"
+            android:parentActivityName=".AdDetect">
+
+        </activity>
+        <activity android:name=".InstalledAppsPermission"
+            android:label="List obtained by Web Scrapping "
+            android:parentActivityName=".AdDetect">
+
+        </activity>
+
+        <activity
+            android:name=".ViewPermission"
+            android:label="Viewpermission"
+            android:parentActivityName=".view_process" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.addetect.addetect.AdDetect" />
+        </activity>
+    </application>
+
+</manifest>

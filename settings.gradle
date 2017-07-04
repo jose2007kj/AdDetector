@@ -1,0 +1,1 @@
+include ':app', ':reflections-0.9.10', ':jsoup-1.8.3'

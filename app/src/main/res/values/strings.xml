@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AdDetect</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="WelcomeToAdDetect">ad1</string>
+    <string name="title_activity_click1_">Click1_Activity</string>
+    <string name="title_activity_detecting_ads">DetectingAds</string>
+    <string name="title_activity_view_process">view_process</string>
+</resources>
